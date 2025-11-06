@@ -1,0 +1,185 @@
+body {
+
+    background: #000;
+
+}
+
+
+.introminima {
+    display: flex;
+    /* ➤ Image + texte côte à côte */
+    align-items: flex-start;
+    /* ➤ Aligné en haut */
+    gap: 50px;
+    /* ➤ Espace entre image et texte */
+    padding: 0;
+    max-width: 1400px;
+    margin: 0;
+    background: #000000;
+}
+
+.introminima img {
+    max-width: 700px;
+    width: 500px;
+    margin-left: 0;
+    padding-left: 0;
+    display: block;
+    border-radius: 8px;
+
+}
+
+.charte-graphique-minima {
+    background-color: #000;
+    color: white;
+    padding: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.bannierefooterminima img {
+    width: 100%;
+    height: auto;
+}
+
+.bannierefooterminima {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.bannierefooterminima {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+    transform-origin: center;
+}
+
+.bannierefooterminima img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    filter: brightness(50%);
+    transition: transform 0.6s ease;
+
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+    transition: transform 0.6s ease;
+}
+
+
+.bannierefooterminima:hover {
+    transform: scale(1.07);
+}
+
+
+.bannierefooterminima:hover .text-overlay {
+    transform: translate(-50%, -50%) scale(1.1);
+
+}
+
+.texteintro {
+    display: flex;
+    flex-direction: column;
+    /* ➤ Les paragraphes l’un sous l’autre */
+    font-size: 15px;
+    line-height: 1.5;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+    padding: 110px;
+    flex: 1;
+    /* ➤ Le texte prend le reste de la largeur */
+    background: #000000;
+}
+
+
+.logopng {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.logopng img {
+    width: 280px;
+    height: auto;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.logopng:hover img {
+    opacity: 0.1;
+
+}
+
+.logopng img:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    z-index: 1;
+}
+
+.charte-graphique {
+    background-color: #000;
+    color: white;
+    padding: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.couleurs {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    margin-bottom: 40px;
+}
+
+.couleur {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    font-family: monospace;
+}
+
+.couleur {
+    position: relative;
+    cursor: pointer;
+}
+
+.code {
+    position: absolute;
+    bottom: 20px;
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    user-select: none;
+}
+
+.couleur:hover .code {
+    opacity: 1;
+}
+
+.code.light {
+    color: black;
+}
