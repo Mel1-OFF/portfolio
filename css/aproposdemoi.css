@@ -3,3 +3,42 @@ body {
     background: #000;
 
 }
+
+.bar {
+    background-color: #070112;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #810d7b;
+    border-radius: 10px;
+    width: 0;
+    animation: fillBar 1.5s forwards;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+}
+
+.progress.figma {
+
+    width: 80%;
+    animation-delay: 0.2s;
+}
+
+.progress.photoshop {
+
+    width: 40%;
+    animation-delay: 0.2s;
+}
+
+.progress.illustrator {
+
+    width: 50%;
+    animation-delay: 0.2s;
+}

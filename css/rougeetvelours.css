@@ -1,6 +1,7 @@
 body {
 
     background: #000;
+    margin: 1%;
 
 }
 
@@ -13,7 +14,6 @@ body {
     gap: 50px;
     /* ➤ Espace entre image et texte */
     padding: 0;
-    max-width: 1400px;
     margin: 0;
     background: #000000;
 }
@@ -79,29 +79,6 @@ body {
     text-align: center;
 }
 
-.couleurs {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
-    margin-bottom: 40px;
-}
-
-.couleur {
-    width: 500px;
-    height: 700px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    font-size: 25px;
-    padding: 10px;
-    color: white;
-    font-family: monospace;
-}
-
-.couleur {
-    position: relative;
-    cursor: pointer;
-}
 
 .code {
     position: absolute;
@@ -125,12 +102,17 @@ body {
     display: flex;
     gap: 10px;
     align-items: flex-start;
-    display: block;
+    flex-wrap: wrap;
 
 }
 
+.moodboard figure {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
 .moodboard img {
-    width: 600px;
-    /* ajuste la taille selon ton besoin */
+    width: 200px;
     height: auto;
 }
