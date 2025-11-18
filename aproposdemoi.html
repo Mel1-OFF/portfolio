@@ -22,7 +22,7 @@
 <body>
 
     <header>
-        Mon Portfolio
+        <button id="lightmode-toggle">Mode clair</button>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -192,7 +192,13 @@
         </nav>
 
     </footer>
+    <script>
+        const btn = document.getElementById("lightmode-toggle");
 
+        btn.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+        });
+    </script>
 </body>
 
 </html>

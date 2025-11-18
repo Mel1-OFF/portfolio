@@ -176,10 +176,3 @@ body {
     /* ajuste la taille selon ton besoin */
     height: auto;
 }
-
-@media (max-width: 600px) {
-
-    .intromina img {
-        width: 100%;
-    }
-}

@@ -23,7 +23,7 @@
 
 
     <header>
-        Mon Portfolio
+        <button id="lightmode-toggle">Mode clair</button>
 
         <nav>
             <ul>
@@ -53,18 +53,28 @@
         </div>
 
 
+
         <section class="projets">
-            <img src="Image/ImageProjets1/velours.jpg">
+            <figure>
+                <img src="Image/ImageProjets1/velours.jpg">
+                <figcaption></figcaption>
+            </figure>
             <a href=" rougeetvelours.html" class="text-overlay">Rouge & Velours</a>
         </section>
 
         <section class="projets">
-            <img src="Image/MINA/MacBook Air - 1.jpg">
+            <figure>
+                <img src="Image/MINA/MacBook Air - 1.jpg">
+                <figcaption></figcaption>
+            </figure>
             <a href="mina.html" class="text-overlay">Mina</a>
         </section>
 
         <section class="projets">
-            <img src="Image/Studio Minima/logo OFF.jpg">
+            <figure>
+                <img src="Image/Studio Minima/logo OFF.jpg">
+                <figcaption></figcaption>
+            </figure>
             <a href="minima.html" class="text-overlay">Minima</a>
         </section>
 
@@ -94,7 +104,13 @@
         </nav>
 
     </footer>
+    <script>
+        const btn = document.getElementById("lightmode-toggle");
 
+        btn.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+        });
+    </script>
 </body>
 
 </html>
