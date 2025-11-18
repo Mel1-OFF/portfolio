@@ -1,17 +1,17 @@
 :root {
     --text: #ffffff;
-
-
+    --background: #000000
 }
 
 
 
 html,
 body {
-
-
+    height: auto;
+    width: 100%;
     margin: 0;
     padding: 0;
+
 
 
 }
@@ -52,6 +52,7 @@ h3 {
 
 header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 
@@ -321,4 +322,47 @@ footer ul li {
     color: #ff835e;
     background-color: palegoldenrod;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+@media (max-width: 600px) {
+
+    .Titre h1,
+    .projets h1,
+    .description h1 {
+        font-size: 40px;
+    }
+
+    .introretv {
+        width: 50%;
+    }
+
+    .texteintro {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+    }
+
+    .charte-graphique-mina {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .logopng {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .moodboard {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
 }

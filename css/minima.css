@@ -160,3 +160,9 @@ body {
 .code.light {
     color: black;
 }
+
+@media (max-width: 600px) {
+    .introminima img {
+        width: 100%;
+    }
+}

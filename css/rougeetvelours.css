@@ -116,3 +116,13 @@ body {
     width: 200px;
     height: auto;
 }
+
+@media (max-width: 600px) {
+
+
+    .introretv img {
+        width: 100%;
+    }
+
+
+}
