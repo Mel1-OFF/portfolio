@@ -1,34 +1,3 @@
 html body {
     background-color: black;
 }
-
-/* Style du bouton (optionnel) */
-#lightmode-toggle {
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    background: #fff;
-    font-weight: bold;
-}
-
-
-/* 🌞 MODE CLAIR ACTIVÉ */
-.light-mode {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-}
-
-/* textes */
-.light-mode h1,
-.light-mode h2,
-.light-mode h3,
-.light-mode p {
-    color: #000 !important;
-}
-
-/* menus */
-.light-mode nav li {
-    background-color: #eee !important;
-    border-color: #000 !important;
-}

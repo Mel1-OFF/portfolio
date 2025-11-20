@@ -1,21 +1,20 @@
+/* ==========================
+   STRUCTURE GÉNÉRALE DU BODY
+========================== */
 body {
-
     background: #000;
-
 }
 
-
-
-
-
-
+/* ==========================
+   INTRO MINA (Image + Texte)
+========================== */
 .intromina {
     display: flex;
-    /* ➤ Image + texte côte à côte */
+    /* Image + texte côte à côte */
     align-items: flex-start;
-    /* ➤ Aligné en haut */
+    /* Aligné en haut */
     gap: 50px;
-    /* ➤ Espace entre image et texte */
+    /* Espace entre image et texte */
     padding: 0;
     max-width: 1400px;
     margin: 0;
@@ -29,10 +28,13 @@ body {
     padding-left: 0;
     display: block;
     border-radius: 8px;
-
 }
 
-.charte-graphique-mina {
+/* ==========================
+   CHARTE GRAPHIQUE
+========================== */
+.charte-graphique-mina,
+.charte-graphique {
     background-color: #000;
     color: white;
     padding: 60px;
@@ -40,11 +42,9 @@ body {
     text-align: center;
 }
 
-.bannierefootermina img {
-    width: 100%;
-    height: auto;
-}
-
+/* ==========================
+   BANNIÈRE FOOTER MINA
+========================== */
 .bannierefootermina {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -52,9 +52,6 @@ body {
     padding: 40px;
     max-width: 100%;
     margin: 0 auto;
-}
-
-.bannierefootermina {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -69,6 +66,17 @@ body {
     transition: transform 0.6s ease;
 }
 
+.bannierefootermina:hover {
+    transform: scale(1.07);
+}
+
+.bannierefootermina:hover .text-overlay {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* ==========================
+   TEXT OVERLAY
+========================== */
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -81,21 +89,13 @@ body {
     transition: transform 0.6s ease;
 }
 
-
-.bannierefootermina:hover {
-    transform: scale(1.07);
-}
-
-
-.bannierefootermina:hover .text-overlay {
-    transform: translate(-50%, -50%) scale(1.1);
-
-}
-
+/* ==========================
+   TEXTE INTRO
+========================== */
 .texteintro {
     display: flex;
     flex-direction: column;
-    /* ➤ Les paragraphes l’un sous l’autre */
+    /* Les paragraphes l’un sous l’autre */
     font-size: 15px;
     line-height: 1.5;
     color: aliceblue;
@@ -103,11 +103,13 @@ body {
     margin-bottom: 30px;
     padding: 110px;
     flex: 1;
-    /* ➤ Le texte prend le reste de la largeur */
+    /* Le texte prend le reste de la largeur */
     background: #000000;
 }
 
-
+/* ==========================
+   LOGOS
+========================== */
 .logopng {
     display: flex;
     justify-content: center;
@@ -126,7 +128,6 @@ body {
 
 .logopng:hover img {
     opacity: 0.1;
-
 }
 
 .logopng img:hover {
@@ -135,16 +136,9 @@ body {
     z-index: 1;
 }
 
-.charte-graphique {
-    background-color: #000;
-    color: white;
-    padding: 60px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-}
-
-
-
+/* ==========================
+   CODE TOOLTIP SUR COULEUR
+========================== */
 .code {
     position: absolute;
     bottom: 20px;
@@ -163,16 +157,9 @@ body {
     color: black;
 }
 
+/* ==========================
+   MOODBOARD
+========================== */
 .moodboard {
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-    display: block;
-
-}
-
-.moodboard img {
-    width: 600px;
-    /* ajuste la taille selon ton besoin */
-    height: auto;
+    display
 }

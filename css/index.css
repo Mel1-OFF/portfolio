@@ -1,53 +1,27 @@
+/* ==========================
+   STRUCTURE GÉNÉRALE DU BODY
+========================== */
 body {
     background: #000;
     height: auto;
     width: 100%;
     margin: 0;
     padding: 0;
-
-
 }
 
-/* Style du bouton (optionnel) */
-#lightmode-toggle {
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    background: #fff;
-    font-weight: bold;
-}
-
-
-/* 🌞 MODE CLAIR ACTIVÉ */
-.light-mode {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-}
-
-/* textes */
-.light-mode h1,
-.light-mode h2,
-.light-mode h3,
-.light-mode p {
-    color: #000 !important;
-}
-
-/* menus */
-.light-mode nav li {
-    background-color: #eee !important;
-    border-color: #000 !important;
-}
-
-
-
-
+/* ==========================
+   CONTENEUR DES BLOBS
+========================== */
 .background-blobs {
-
     inset: 0;
+    /* couvre tout le body */
     z-index: -1;
+    /* derrière le contenu */
 }
 
+/* ==========================
+   BLOBS INDIVIDUELS
+========================== */
 .blob {
     position: absolute;
     width: 450px;
@@ -71,14 +45,7 @@ body {
     bottom: 10%;
     right: 15%;
     animation-delay: 5s;
+    /* décalage pour un mouvement différé */
 }
 
-@keyframes move {
-    0% {
-        transform: translate(0, 0) scale(1);
-    }
-
-    100% {
-        transform: translate(50px, -50px) scale(1.2);
-    }
-}
+/* ==============*

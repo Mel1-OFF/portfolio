@@ -1,40 +1,13 @@
+/* ==========================
+   STRUCTURE GÉNÉRALE DU BODY
+========================== */
 body {
-
     background: #000;
-
 }
 
-/* Style du bouton (optionnel) */
-#lightmode-toggle {
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    background: #fff;
-    font-weight: bold;
-}
-
-
-/* 🌞 MODE CLAIR ACTIVÉ */
-.light-mode {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-}
-
-/* textes */
-.light-mode h1,
-.light-mode h2,
-.light-mode h3,
-.light-mode p {
-    color: #000 !important;
-}
-
-/* menus */
-.light-mode nav li {
-    background-color: #eee !important;
-    border-color: #000 !important;
-}
-
+/* ==========================
+   BARRES DE PROGRESSION
+========================== */
 .bar {
     background-color: #070112;
     border-radius: 10px;
@@ -50,38 +23,49 @@ body {
     animation: fillBar 1.5s forwards;
 }
 
+/* Progressions spécifiques */
+.progress.figma {
+    width: 80%;
+    animation-delay: 0.2s;
+}
+
+.progress.photoshop {
+    width: 50%;
+    animation-delay: 0.2s;
+}
+
+.progress.illustrator {
+    width: 40%;
+    animation-delay: 0.2s;
+}
+
+.progress.indesign {
+    width: 20%;
+    animation-delay: 0.2s;
+}
+
+/* ==========================
+   ANIMATIONS
+========================== */
 @keyframes fillBar {
     from {
         width: 0;
     }
 }
 
-.progress.figma {
-
-    width: 80%;
-    animation-delay: 0.2s;
-}
-
-.progress.photoshop {
-
-    width: 40%;
-    animation-delay: 0.2s;
-}
-
-.progress.illustrator {
-
-    width: 50%;
-    animation-delay: 0.2s;
-}
-
+/* ==========================
+   TEXTE & TYPOGRAPHIE
+========================== */
 p {
     color: white;
 }
 
+/* ==========================
+   CONTAINER PHOTO / ABOUT
+========================== */
 .ppabout {
     background-color: #000;
     border-radius: 10px;
     margin-left: 40%;
     margin-top: 10%;
-
 }

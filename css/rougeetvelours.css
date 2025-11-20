@@ -1,18 +1,21 @@
+/* ==========================
+   STRUCTURE GÉNÉRALE DU BODY
+========================== */
 body {
-
     background: #000;
     margin: 1%;
-
 }
 
-
+/* ==========================
+   INTRO RETV (Image + Texte)
+========================== */
 .introretv {
     display: flex;
-    /* ➤ Image + texte côte à côte */
+    /* Image + texte côte à côte */
     align-items: flex-start;
-    /* ➤ Aligné en haut */
+    /* Aligné en haut */
     gap: 50px;
-    /* ➤ Espace entre image et texte */
+    /* Espace entre image et texte */
     padding: 0;
     margin: 0;
     background: #000000;
@@ -25,13 +28,15 @@ body {
     padding-left: 0;
     display: block;
     border-radius: 8px;
-
 }
 
+/* ==========================
+   TEXTE INTRO
+========================== */
 .texteintro {
     display: flex;
     flex-direction: column;
-    /* ➤ Les paragraphes l’un sous l’autre */
+    /* Les paragraphes l’un sous l’autre */
     font-size: 15px;
     line-height: 1.5;
     color: aliceblue;
@@ -39,11 +44,13 @@ body {
     margin-bottom: 30px;
     padding: 110px;
     flex: 1;
-    /* ➤ Le texte prend le reste de la largeur */
+    /* Le texte prend le reste de la largeur */
     background: #000000;
 }
 
-
+/* ==========================
+   LOGOS
+========================== */
 .logopng {
     display: flex;
     justify-content: center;
@@ -62,7 +69,6 @@ body {
 
 .logopng:hover img {
     opacity: 0.1;
-
 }
 
 .logopng img:hover {
@@ -71,6 +77,9 @@ body {
     z-index: 1;
 }
 
+/* ==========================
+   CHARTE GRAPHIQUE
+========================== */
 .charte-graphique {
     background-color: #000;
     color: white;
@@ -79,7 +88,9 @@ body {
     text-align: center;
 }
 
-
+/* ==========================
+   CODE TOOLTIP SUR COULEUR
+========================== */
 .code {
     position: absolute;
     bottom: 20px;
@@ -98,12 +109,14 @@ body {
     color: black;
 }
 
+/* ==========================
+   MOODBOARD
+========================== */
 .moodboard {
     display: flex;
     gap: 10px;
     align-items: flex-start;
     flex-wrap: wrap;
-
 }
 
 .moodboard figure {
@@ -117,12 +130,11 @@ body {
     height: auto;
 }
 
+/* ==========================
+   MEDIA QUERIES
+========================== */
 @media (max-width: 600px) {
-
-
     .introretv img {
         width: 100%;
     }
-
-
 }
